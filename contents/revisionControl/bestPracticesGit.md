@@ -72,16 +72,16 @@ Every commit must have a well written commit message _subject line_. Here are **
 
 1. Try to limit the subject line to 50 characters (hard limit: 72 chars)
     - Usually, only the subject line is shown in the log, conflict resolution, interactive rebase, etc.
-
+<br>
 2. Capitalize the subject line e.g. `Move index.html file to root`
     - Do not end the subject line with a period.
-
+<br>
 3. Use the <popover effect="scale" content="spoken or written as if giving an instruction" placement="top">imperative</popover> mood in the subject line
     - e.g. `Add README.md` rather than `Added README.md` or `Adding README.md` or `Adds README.md`.
-
+<br>
 4. Use `{scope}: {change}` format when applicable
     - e.g. `Person class: remove static imports`, or `Unit tests: remove blank lines`
-
+<br>
 5. Commit messages for non-trivial commits should have a *body* giving details of the commit.
     1. Separate subject from body with a blank line
     2. Wrap the body at 72 characters
