@@ -172,6 +172,9 @@ git stash pop
 # acts like git stash pop, but keeps a copy of the stash in the current stash stack
 git stash apply
 
+# removes the latest stash from the stash stack
+git stash drop
+
 # list all stashes in the stack
 git stash list
 ```
