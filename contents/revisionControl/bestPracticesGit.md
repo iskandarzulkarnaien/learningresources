@@ -86,9 +86,9 @@ Every commit must have a well written commit message _subject line_. Here are **
     1. Separate subject from body with a blank line
     2. Wrap the body at 72 characters
     3. Use the body to explain:
-        - _what_ the commit does, and
-        - _why_ it was done that way, such that
-        - the reader can refer to the diff to understand _how_ the change was done.
+        - :heavy_check_mark: _what_ the commit does
+        - :heavy_check_mark: _why_ it was done that way
+        - :x: _how_ the change was done (the reader can refer to the diff to understand this)
     4. Avoid including information that can be included in the code as comments.
 
 Give an explanation for the change(s) that is detailed enough so that the reader can judge if it is a good thing to do, without reading the actual diff to determine how well the code does what the explanation promises to do. If your description starts to get too long, that’s a sign that you probably need to split up your commit to finer grained pieces.
