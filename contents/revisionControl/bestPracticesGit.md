@@ -231,6 +231,10 @@ Hiding the sausage is typically achieved by either/both:
 - performing an interactive rebase, i.e. `git rebase -i`
 - patch-wise reset and stage, i.e. `git reset -p` and `git add -p`
 
+<box type="important">
+Rewriting commit history can cause you to lose work if done incorrectly! If in doubt, create a new branch as a backup, then delete it once you confirm the correct changes have been made.
+</box>
+
 Ensure that you do this _before_:
 - pushing to a remote repository [to respect the published history](#respect-published-history) and
 - performing any merges from other branches.
