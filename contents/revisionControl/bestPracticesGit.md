@@ -68,7 +68,7 @@ git commit --verbose
 git commit --amend HEAD^
 ```
 
-Every commit must have a well written commit message _subject line_.
+Every commit must have a well written commit message _subject line_. Here are **five** general rules to keep in mind.
 
 1. Try to limit the subject line to 50 characters (hard limit: 72 chars)
     - Usually, only the subject line is shown in the log, conflict resolution, interactive rebase, etc.
