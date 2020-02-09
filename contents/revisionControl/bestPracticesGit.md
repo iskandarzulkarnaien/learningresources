@@ -244,7 +244,7 @@ Ensure that you do this _before_:
 Read more:
 - [On Sausage Making](https://sethrobertson.github.io/GitBestPractices/#sausage)
 - [Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) (great reference for how to actually do this, under _Changing Multiple Commit Messages_)
-- [Messed up a rebase and lost work? All is not lost](https://stackoverflow.com/a/135614)
+- [Undoing an accidental rebase/reset](https://stackoverflow.com/a/135614)
 
 ---
 
