@@ -50,7 +50,7 @@ Good commit messages can help reviewers or other contributors to understand:
     - reviewing your code
     - figuring out why a piece of code that is five years old is that way
 
-They also assist you in the development process if you forget what has been done, or if you need to cherry-pick commits for elsewhere.
+They also assist you in the development process if you forget what has been done, or if you need to [cherry-pick](https://git-scm.com/docs/git-cherry-pick) commits for elsewhere.
 
 ### What Constitutes a Good Commit Message
 The easiest way to attain commit message discipline is to stop putting in one-liner descriptions using `git commit -m "Add some things to that."`. Instead, write a proper commit message in an editor:
