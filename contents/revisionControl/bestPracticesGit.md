@@ -76,7 +76,7 @@ Every commit must have a well written commit message _subject line_. Here are **
 2. Capitalize the subject line e.g. `Move index.html file to root`
     - Do not end the subject line with a period.
 <br>
-3. Use the <popover effect="scale" content="spoken or written as if giving an instruction" placement="top">imperative</popover> mood in the subject line
+3. Use the <tooltip effect="scale" content="spoken or written as if giving an instruction" placement="top">imperative</tooltip> mood in the subject line
     - e.g. `Add README.md` rather than `Added README.md` or `Adding README.md` or `Adds README.md`.
 <br>
 4. Use `{scope}: {change}` format when applicable
