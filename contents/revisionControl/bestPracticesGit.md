@@ -36,10 +36,12 @@ Author(s): [Darren Wee](https://github.com/darrenwee)
 # Introduction
 [`git`](https://git-scm.com/) is a popular source code management tool and commonly used in many open-source projects, especially those on [GitHub](https://github.com).
 
-# Best Practices
-`git` can be an incredibly useful tool for collaboration or it can be a terrible headache. Best practices exist in order to create a common understanding between users so that the latter does not happen.
+If you are new to `git`, are having trouble visualising the `git` workflow, or simply want some additional practice checkout [this](https://learngitbranching.js.org/) visual and interative tutorial.
 
-Best practices are guidelines that are mostly sensible, but are still guidelines. You can always choose to ignore them although best if you have a compelling reason to do so.
+## What are Best Practices and Why Should You Follow Them?
+`git` can be an incredibly useful tool for collaboration or it can be a terrible headache. Best practices are guidelines that exist in order to create a common understanding between users so that the latter does not happen.
+
+Best practices are mostly sensible, but are still guidelines. You can always choose to ignore them although its best if you have a compelling reason to do so.
 
 ---
 
