@@ -36,10 +36,12 @@ Author(s): [Darren Wee](https://github.com/darrenwee)
 # Introduction
 [`git`](https://git-scm.com/) is a popular source code management tool and commonly used in many open-source projects, especially those on [GitHub](https://github.com).
 
-# Best Practices
-`git` can be an incredibly useful tool for collaboration or it can be a terrible headache. Best practices exist in order to create a common understanding between users so that the latter does not happen.
+If you are new to `git`, are having trouble visualising the `git` workflow, or simply want some additional practice checkout [this](https://learngitbranching.js.org/) visual and interative tutorial.
 
-Best practices are guidelines that are mostly sensible, but are still guidelines. You can always choose to ignore them although best if you have a compelling reason to do so.
+## What are Best Practices and Why Should You Follow Them?
+`git` can be an incredibly useful tool for collaboration or it can be a terrible headache. Best practices are guidelines that exist in order to create a common understanding between users so that the latter does not happen.
+
+Best practices are mostly sensible, but are still guidelines. You can always choose to ignore them although its best if you have a compelling reason to do so.
 
 ---
 
@@ -50,7 +52,7 @@ Good commit messages can help reviewers or other contributors to understand:
     - reviewing your code
     - figuring out why a piece of code that is five years old is that way
 
-They also assist you in the development process if you forget what has been done, or if you need to cherry-pick commits for elsewhere.
+They also assist you in the development process if you forget what has been done, or if you need to [cherry-pick](https://git-scm.com/docs/git-cherry-pick) commits for elsewhere.
 
 ### What Constitutes a Good Commit Message
 The easiest way to attain commit message discipline is to stop putting in one-liner descriptions using `git commit -m "Add some things to that."`. Instead, write a proper commit message in an editor:
@@ -68,27 +70,27 @@ git commit --verbose
 git commit --amend HEAD^
 ```
 
-Every commit must have a well written commit message _subject line_.
+Every commit must have a well written commit message _subject line_. Here are **five** general rules to keep in mind.
 
 1. Try to limit the subject line to 50 characters (hard limit: 72 chars)
     - Usually, only the subject line is shown in the log, conflict resolution, interactive rebase, etc.
-
+<br>
 2. Capitalize the subject line e.g. `Move index.html file to root`
     - Do not end the subject line with a period.
-
-3. Use the imperative mood in the subject line
+<br>
+3. Use the <tooltip effect="scale" content="spoken or written as if giving an instruction" placement="top">imperative</tooltip> mood in the subject line
     - e.g. `Add README.md` rather than `Added README.md` or `Adding README.md` or `Adds README.md`.
-
+<br>
 4. Use `{scope}: {change}` format when applicable
     - e.g. `Person class: remove static imports`, or `Unit tests: remove blank lines`
-
+<br>
 5. Commit messages for non-trivial commits should have a *body* giving details of the commit.
     1. Separate subject from body with a blank line
     2. Wrap the body at 72 characters
     3. Use the body to explain:
-        - _what_ the commit does, and
-        - _why_ it was done that way, such that
-        - the reader can refer to the diff to understand _how_ the change was done.
+        - :heavy_check_mark: _what_ the commit does
+        - :heavy_check_mark: _why_ it was done that way
+        - :x: _how_ the change was done (the reader can refer to the diff to understand this)
     4. Avoid including information that can be included in the code as comments.
 
 Give an explanation for the change(s) that is detailed enough so that the reader can judge if it is a good thing to do, without reading the actual diff to determine how well the code does what the explanation promises to do. If your description starts to get too long, that’s a sign that you probably need to split up your commit to finer grained pieces.
@@ -172,6 +174,9 @@ git stash pop
 # acts like git stash pop, but keeps a copy of the stash in the current stash stack
 git stash apply
 
+# removes the latest stash from the stash stack
+git stash drop
+
 # list all stashes in the stack
 git stash list
 ```
@@ -228,6 +233,10 @@ Hiding the sausage is typically achieved by either/both:
 - performing an interactive rebase, i.e. `git rebase -i`
 - patch-wise reset and stage, i.e. `git reset -p` and `git add -p`
 
+<box type="important">
+Rewriting commit history can cause you to lose work if done incorrectly! If in doubt, create a new branch as a backup, then delete it once you confirm the correct changes have been made.
+</box>
+
 Ensure that you do this _before_:
 - pushing to a remote repository [to respect the published history](#respect-published-history) and
 - performing any merges from other branches.
@@ -235,6 +244,7 @@ Ensure that you do this _before_:
 Read more:
 - [On Sausage Making](https://sethrobertson.github.io/GitBestPractices/#sausage)
 - [Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) (great reference for how to actually do this, under _Changing Multiple Commit Messages_)
+- [Undoing an accidental rebase/reset](https://stackoverflow.com/a/135614)
 
 ---
 
